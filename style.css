@@ -17,11 +17,16 @@ body {
     gap: 5px;
 }
 
-#calculator-screen {
-    min-height: 75px;
-    background-color: rgb(123, 241, 236);
+.wrapper .display {
+    height: 75px;
+    background-color: aquamarine;
     border: none;
+    outline: none;
+    font-size: 32px;
+    text-align: right;
+    pointer-events: none;
 }
+
 
 .keys {
     display: grid;
@@ -31,15 +36,25 @@ body {
     border-radius: 5px;
 }
 
-.key {
+button {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: aquamarine;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
     border: none;
+
 }
 
-.key:hover {
+.operator {
+    background-color: rgb(119, 198, 201);
+}
+
+button:hover {
     background-color: rgb(160, 233, 255);
+}
+
+button:active{
+    background-color: blueviolet;
 }
